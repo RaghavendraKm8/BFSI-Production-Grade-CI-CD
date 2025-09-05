@@ -5,3 +5,8 @@ image:
 service:
   type: ClusterIP
   port: 8081
+service:
+  type: NodePort
+  port: 8081
+  nodePort: 30081
+
