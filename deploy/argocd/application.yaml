@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: payments-api
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/your-org/BFSI-Production-Grade-CI-CD
+    path: deploy/helm/payments-api
+    targetRevision: main
+    helm:
+      releaseName: payments-api
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
