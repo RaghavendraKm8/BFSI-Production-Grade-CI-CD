@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/BFSI-Production-Grade-CI-CD
+    repoURL: https://github.com/RaghavendraKm8/BFSI-Production-Grade-CI-CD
     path: deploy/helm/payments-api
     targetRevision: main
     helm:
