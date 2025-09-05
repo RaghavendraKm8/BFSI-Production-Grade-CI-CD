@@ -27,6 +27,6 @@ func getPayment(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/healthz", healthz)
 	http.HandleFunc("/v1/payments", getPayment)
-	log.Println("Starting payments-api on :8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Starting payments-api on :8081")
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
